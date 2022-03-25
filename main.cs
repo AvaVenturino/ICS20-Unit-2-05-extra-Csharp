@@ -23,7 +23,6 @@ class Program
         Double Pay = (hoursworked * hourlyrate) * (1.00 - 0.18);
         Double Taxes = (hoursworked * hourlyrate) * 0.18;
 
-      decimalVar.ToString("0.00"); // returns "0.50"  when decimalVar == 0.5m
         Console.WriteLine("");
         Console.Write("Your pay will be: " + " $" + Pay );
         Console.ReadKey();
