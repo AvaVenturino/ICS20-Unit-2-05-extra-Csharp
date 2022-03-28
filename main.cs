@@ -12,22 +12,22 @@ class Program
         // This function accepts user input
         int hoursworked;
         int hourlyrate;
-
+        //input
         Console.WriteLine("This program determines your pay and the amount you have to give the government.");
         Console.WriteLine("");
         Console.Write("Enter the amount of hours worked: ");
         hoursworked = Convert.ToInt32(Console.ReadLine());
         Console.Write("Enter your hourly rate: ");
         hourlyrate = Convert.ToInt32(Console.ReadLine());
-
-        Double Pay = (hoursworked * hourlyrate) * (1.00 - 0.18);
-        Double Taxes = (hoursworked * hourlyrate) * 0.18;
-
+      //process
+        Double pay = (hoursworked * hourlyrate) * (1.00 - 0.18);
+        Double taxes = (hoursworked * hourlyrate) * 0.18;
+      //output
         Console.WriteLine("");
-        Console.Write("Your pay will be: " + " $" + Pay);
+        Console.Write("Your pay will be: " + " $" + pay.ToString("0.00"));
         Console.ReadKey();
         Console.WriteLine("");
-        Console.Write("The government will take: " + " $" + Taxes);
+        Console.Write("The government will take: " + " $" + taxes.ToString("0.00"));
         Console.ReadKey();
         Console.WriteLine("\nDone.");
     }
