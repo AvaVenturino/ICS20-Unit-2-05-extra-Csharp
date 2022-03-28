@@ -24,9 +24,8 @@ class Program
         Double Taxes = (hoursworked * hourlyrate) * 0.18;
 
         Console.WriteLine("");
-        Console.Write("Your pay will be: " + " $" + Pay );
+        Console.Write("Your pay will be: " + " $" + Pay);
         Console.ReadKey();
-      
         Console.WriteLine("");
         Console.Write("The government will take: " + " $" + Taxes);
         Console.ReadKey();
