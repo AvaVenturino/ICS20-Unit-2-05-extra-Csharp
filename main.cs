@@ -19,10 +19,12 @@ class Program
         hoursworked = Convert.ToInt32(Console.ReadLine());
         Console.Write("Enter your hourly rate: ");
         hourlyrate = Convert.ToInt32(Console.ReadLine());
+      
       //process
-        Double pay = (hoursworked * hourlyrate) * (1.00 - 0.18);
+      Double pay = (hoursworked * hourlyrate) * (1.00 - 0.18);
         Double taxes = (hoursworked * hourlyrate) * 0.18;
-      //output
+      
+    //output
         Console.WriteLine("");
         Console.Write("Your pay will be: " + " $" + pay.ToString("0.00"));
         Console.ReadKey();
