@@ -22,7 +22,6 @@ class Program
 
         Double pay = (hoursworked * hourlyrate) * (1.00 - 0.18);
         Double taxes = (hoursworked * hourlyrate) * 0.18;
-      
         Console.WriteLine("");
         Console.Write("Your pay will be: " + " $" + pay.ToString("0.00"));
         Console.ReadKey();
