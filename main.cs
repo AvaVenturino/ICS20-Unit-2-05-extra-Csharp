@@ -29,7 +29,6 @@ class Program
         Console.WriteLine("");
         Console.Write("The government will take: " + " $" + Taxes);
         Console.ReadKey();
-      
         Console.WriteLine("\nDone.");
     }
 }
